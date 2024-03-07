@@ -1,0 +1,320 @@
+#top-bar {
+  display: flex;
+}
+
+#food-image {
+  width: 55%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  color: #000000;
+  font-size: 10.5vw;
+  text-align: left;
+  line-height: 0.5em;
+}
+
+#sub-text {
+  color: #c60000;
+  font-size: 2.5vw;
+  font-family: "Mada", sans-serif;
+}
+
+#black-rect {
+  width: 10%;
+  height: 650px;
+  background-color: #000000;
+  float: left;
+}
+
+#white-rect {
+  width: 35%;
+  height: 650px;
+  background-color: #ffffff;
+  float: left;
+}
+
+#yellow-rect {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: #ffb321;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50vw 1fr;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 50vw;
+  position: absolute;
+}
+
+#sample-menu {
+  border: 10px solid #c60000;
+  border-radius: 20px;
+}
+
+.order-and-hours {
+  display: flex;
+  flex-direction: column;
+  margin-top: 350px;
+  width: 80vw;
+  margin-left: 20vw;
+  background-color: #ffb321;
+  border-radius: 20px;
+}
+
+.order-button {
+  margin-top: 100px;
+  margin-left: 30vw;
+}
+
+.hours {
+  margin-left: 30vw;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #c60000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 50px;
+  width: 480px;
+  height: 120px;
+  font-family: "Oregano";
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background-color: #710000;
+}
+
+.location-bar {
+  display: flex;
+  margin-top: 150px;
+}
+
+.location-box {
+  display: flex;
+  width: 65vw;
+  height: 400px;
+  background-color: #ffb321;
+  border-radius: 20px;
+  margin-left: 8vw;
+  align-items: center;
+}
+
+#bottom-bar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  color: #ffffff;
+  left: 20px;
+  border: 20px solid #000000;
+}
+
+#map {
+  width: 420px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+h1 {
+  font-family: "Oregano";
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Oregano";
+  font-size: 45px;
+}
+
+h3 {
+  font-family: "Mada", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Mada", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Mada", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1080px) {
+  #food-image {
+    height: 500px;
+  }
+
+  #black-rect {
+    height: 500px;
+  }
+
+  #white-rect {
+    height: 500px;
+  }
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .order-and-hours {
+    margin-top: 600px;
+    width: 100vw;
+    margin-left: 0px;
+    align-items: center;
+  }
+
+  .order-button {
+    margin-top: 250px;
+    margin-left: 0px;
+  }
+
+  .hours {
+    margin-left: 0px;
+  }
+
+  #map {
+    width: 300px;
+  }
+
+  .location-bar {
+    justify-content: center;
+  }
+
+  .location-box {
+    margin-left: 0px;
+    height: 300px;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  #top-bar {
+    flex-direction: column-reverse;
+  }
+
+  #food-image {
+    width: 100vw;
+    height: 400px;
+  }
+
+  #black-rect {
+    width: 100vw;
+    height: 80px;
+  }
+
+  #white-rect {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .overlay-text {
+    color: #ffffff;
+    font-size: 90px;
+    text-align: center;
+    line-height: 1em;
+    top: 100px;
+  }
+
+  #sub-text {
+    font-size: 25px;
+    position: relative;
+    top: 180px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .location-box {
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 300px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .location-bar {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #map {
+    width: 200px;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  #sample-menu {
+    width: 350px;
+    height: auto;
+  }
+
+  button {
+    border-radius: 20px;
+    font-size: 40px;
+    width: 300px;
+    height: 100px;
+  }
+
+  .order-button {
+    margin-top: 200px;
+  }
+
+  .order-and-hours {
+    margin-top: 450px;
+    width: 100vw;
+    margin-left: 0px;
+    align-items: center;
+  }
+
+  #bottom-bar {
+    flex-direction: column;
+    height: 280px;
+    text-align: center;
+  }
+}
