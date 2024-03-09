@@ -139,31 +139,31 @@ button:hover {
   margin-right: 60px;
 }
 
-h1 {
+.large-header {
   font-family: "Oregano";
   font-size: 50px;
 }
 
-h2 {
+.small-header {
   font-family: "Oregano";
   font-size: 30px;
 }
 
-h3 {
+.body-text {
   font-family: "Mada", sans-serif;
   font-size: 25px;
   font-weight: 400;
   font-style: normal;
 }
 
-h4 {
+.announcement-text {
   font-family: "Mada", sans-serif;
   font-size: 30px;
   font-weight: 500;
   font-style: normal;
 }
 
-h5 {
+.small-body-text {
   font-family: "Mada", sans-serif;
   font-size: 25px;
   font-weight: 300;
@@ -257,19 +257,19 @@ h5 {
     top: 180px;
   }
 
-  h4 {
+  .announcement-text {
     font-size: 20px;
   }
 
-  h3 {
+  .body-text {
     font-size: 20px;
   }
 
-  h2 {
+  .small-header {
     font-size: 35px;
   }
 
-  h1 {
+  .large-header {
     font-size: 60px;
   }
 
